@@ -18,11 +18,11 @@ ICONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons")
 
 # Map state keys to icon file names (without extension)
 _ICON_NAMES = {
-    "checking": "checking",
-    "updating": "updating",
-    "error": "error",
-    "updates-available": "updates-available",
-    "up-to-date": "up-to-date",
+    "checking": "fpi-e673-checking",
+    "updating": "fpi-e673-updating",
+    "error": "fpi-e673-error",
+    "updates-available": "fpi-e673-updates-available",
+    "up-to-date": "fpi-e673-up-to-date",
 }
 
 
