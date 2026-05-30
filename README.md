@@ -27,8 +27,8 @@ python3 main.py
 Copy the included desktop file to your XDG autostart directory and set the correct path:
 
 ```bash
-cp flatpak-tray.desktop ~/.config/autostart/flatpak-tray.desktop
-nano ~/.config/autostart/flatpak-tray.desktop
+cp flatpak-indicator.desktop ~/.config/autostart/flatpak-indicator.desktop
+nano ~/.config/autostart/flatpak-indicator.desktop
 ```
 
 Update the `Exec` line to the absolute path of `main.py` on your system, for example:

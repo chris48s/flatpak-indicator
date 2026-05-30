@@ -32,7 +32,7 @@ class TrayIcon:
         self._on_update = on_update
 
         self._indicator = AppIndicator3.Indicator.new(
-            "flatpak-tray",
+            "flatpak-indicator",
             _ICON_NAMES["checking"],
             AppIndicator3.IndicatorCategory.APPLICATION_STATUS,
         )
