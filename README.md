@@ -39,23 +39,6 @@ Exec=python3 /home/yourname/flatpak-indicator/main.py
 
 The file is picked up automatically on next login by any XDG-compliant desktop environment (GNOME, KDE, XFCE, etc.).
 
-## Project structure
-
-```
-.
-├── main.py                # Entry point, app state, threading
-├── tray.py                # AppIndicator tray icon and menu
-├── flatpak_runner.py      # Flatpak subprocess calls
-├── notifications.py       # Desktop notifications via libnotify
-├── flatpak-tray.desktop   # XDG autostart template
-└── icons/
-    ├── up-to-date.svg
-    ├── updates-available.svg
-    ├── checking.svg
-    ├── updating.svg
-    └── error.svg
-```
-
 ## Tray states
 
 | Icon | Meaning |
