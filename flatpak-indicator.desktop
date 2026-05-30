@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Flatpak Update Tray
+Comment=Apply Flatpak updates from the system tray
+Exec=python3 /path/to/flatpak-indicator/main.py
+Icon=system-software-update
+Terminal=false
+Categories=Utility;
+StartupNotify=false

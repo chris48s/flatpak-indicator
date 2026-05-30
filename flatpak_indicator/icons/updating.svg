@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+  <!-- Blue circle: downloading / applying updates -->
+  <circle cx="11" cy="11" r="10" fill="#2196F3"/>
+  <!-- Download arrow -->
+  <line x1="11" y1="6" x2="11" y2="13"
+        stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <polyline points="7.5,10 11,14 14.5,10"
+            fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Shelf line at bottom -->
+  <line x1="7" y1="16" x2="15" y2="16"
+        stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

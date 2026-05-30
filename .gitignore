@@ -1,0 +1,15 @@
+# python cache files
+__pycache__/
+*.pyc
+
+# venv
+.venv
+
+# build artifacts
+build/
+dist/
+flatpak_indicator.egg-info/
+
+# test coverage
+.coverage
+coverage.xml

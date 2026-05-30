@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+  <!-- Grey circle: checking / searching -->
+  <circle cx="11" cy="11" r="10" fill="#757575"/>
+  <!-- Three dots (ellipsis) -->
+  <circle cx="7"  cy="11" r="1.5" fill="white"/>
+  <circle cx="11" cy="11" r="1.5" fill="white"/>
+  <circle cx="15" cy="11" r="1.5" fill="white"/>
+</svg>

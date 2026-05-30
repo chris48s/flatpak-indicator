@@ -1,0 +1,30 @@
+[project]
+name = "flatpak-indicator"
+version = "0.0.0"
+description = "Apply Flatpak updates from the system tray"
+authors = [{name = "chris48s"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.poetry.group.dev.dependencies]
+isort = "==8.0.1"
+flake8 = "==7.3.0"
+black = "==26.5.1"
+pytest = "==9.0.3"
+pytest-cov = "==7.1.0"
+
+[project.urls]
+Home = "https://github.com/chris48s/flatpak-indicator"
+Source = "https://github.com/chris48s/flatpak-indicator"
+
+[tool.poetry]
+requires-poetry = ">=2.0"
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
