@@ -2,8 +2,9 @@
 Type=Application
 Name=Flatpak Update Tray
 Comment=Apply Flatpak updates from the system tray
-Exec=python3 /path/to/flatpak-indicator/main.py
-Icon=system-software-update
+Exec=flatpak-indicator
+Icon=software-update-available
 Terminal=false
 Categories=Utility;
 StartupNotify=false
+X-GNOME-Autostart-enabled=true

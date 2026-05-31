@@ -27,4 +27,8 @@ run:
 	python main.py
 
 build:
-	@echo "TODO"
+	debian/rules clean
+	rm -rf dist
+	mkdir -p dist
+	fakeroot debian/rules binary
+	lintian dist/flatpak-indicator*.deb

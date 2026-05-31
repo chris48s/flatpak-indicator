@@ -1,0 +1,12 @@
+Source: flatpak-indicator
+Section: utils
+Priority: optional
+Maintainer: chris48s <chris48s@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+
+Package: flatpak-indicator
+Architecture: all
+Depends: ${misc:Depends}, python3, python3-gi, gir1.2-notify-0.7, flatpak, gir1.2-ayatanaappindicator3-0.1 | gir1.2-appindicator3-0.1
+Description: Apply Flatpak updates from the system tray
+ A system tray application that monitors and applies Flatpak updates.

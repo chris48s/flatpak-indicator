@@ -1,0 +1,8 @@
+# staging tree built by dh_auto_install
+flatpak-indicator/
+
+# dpkg-buildpackage bookkeeping
+files
+debhelper-build-stamp
+*.debhelper.log
+*.substvars

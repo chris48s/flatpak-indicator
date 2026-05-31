@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_builddeb:
+	dh_builddeb --destdir=$(CURDIR)/dist
+
+override_dh_auto_build:
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	install -d debian/flatpak-indicator/usr/share/flatpak-indicator
+	cp -r flatpak_indicator debian/flatpak-indicator/usr/share/flatpak-indicator/
+	find debian/flatpak-indicator/usr/share/flatpak-indicator -type d -name '__pycache__' | xargs rm -rf
+	cp main.py debian/flatpak-indicator/usr/share/flatpak-indicator/
+	install -d debian/flatpak-indicator/usr/bin
+	install -m 755 debian/bin/flatpak-indicator debian/flatpak-indicator/usr/bin/flatpak-indicator
+	install -d debian/flatpak-indicator/usr/share/applications
+	install -m 644 debian/flatpak-indicator.desktop debian/flatpak-indicator/usr/share/applications/
+	install -d debian/flatpak-indicator/etc/xdg/autostart
+	install -m 644 debian/flatpak-indicator.desktop debian/flatpak-indicator/etc/xdg/autostart/
