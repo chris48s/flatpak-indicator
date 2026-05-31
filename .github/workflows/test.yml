@@ -11,6 +11,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Install system packages
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get install -y debhelper
+
       - name: 'Build, Test, Lint: ${{ matrix.python-version }}'
         uses: chris48s/python-package-shared@main
         with:
