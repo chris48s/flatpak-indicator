@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-.PHONY: help env format install lint test run
+.PHONY: help env format install lint test run build
 
 help:
 	@grep '^\.PHONY' Makefile | cut -d' ' -f2- | tr ' ' '\n'
@@ -25,3 +25,6 @@ test:
 
 run:
 	python main.py
+
+build:
+	@echo "TODO"
