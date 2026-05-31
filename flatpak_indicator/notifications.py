@@ -11,7 +11,7 @@ _initialized = False
 def _ensure_init() -> None:
     global _initialized
     if not _initialized:
-        Notify.init("Flatpak Tray")
+        Notify.init("Flatpak Indicator")
         _initialized = True
 
 

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Flatpak Update Tray
+Name=Flatpak Indicator
 Comment=Apply Flatpak updates from the system tray
 Exec=flatpak-indicator
 Icon=software-update-available

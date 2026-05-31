@@ -1,4 +1,4 @@
-# Flatpak Update Tray
+# Flatpak Indicator
 
 A lightweight Linux system tray application that monitors Flatpak package updates and lets you apply them with one click.
 
