@@ -6,7 +6,7 @@
 sudo apt install python3-gi gir1.2-ayatanaappindicator3-0.1 gir1.2-notify-0.7 flatpak debhelper
 ```
 
-or you can use the older `gir1.2-appindicator3-0.1` inplace of `gir1.2-ayatanaappindicator3-0.1`
+or you can use the older `gir1.2-appindicator3-0.1` in place of `gir1.2-ayatanaappindicator3-0.1`
 
 ## Development Tasks:
 
