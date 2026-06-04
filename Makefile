@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-.PHONY: help env format install lint test run build
+.PHONY: help env format install lint test run build release
 
 help:
 	@grep '^\.PHONY' Makefile | cut -d' ' -f2- | tr ' ' '\n'
@@ -32,3 +32,11 @@ build:
 	mkdir -p dist
 	fakeroot debian/rules binary
 	lintian dist/flatpak-indicator*.deb
+
+# usage: `make release version=0.0.0`
+release:
+	make test
+	@echo ""
+	make lint
+	@echo ""
+	./release.sh "$(version)"

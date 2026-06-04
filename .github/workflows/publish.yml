@@ -1,0 +1,33 @@
+name: Publish
+on: create
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: github.event.ref_type == 'tag'
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build deb
+        run: make build
+
+      - name: Install gh
+        run: sudo apt update && sudo apt install -y gh
+
+      - name: Create release + upload assets
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          awk -v ver="$TAG" '
+          $0 ~ "(" ver ")" { in_section=1; next }
+          in_section && /^ -- / { exit }
+          in_section && /^  \* / { sub(/^  /, ""); print }
+          ' debian/changelog | \
+          gh release create "$TAG" \
+          dist/*.zip \
+          --title "$TAG" \
+          -F -
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
