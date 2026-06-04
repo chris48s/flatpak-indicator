@@ -31,7 +31,7 @@ jobs:
           in_section && /^  \* / { sub(/^  /, ""); print }
           ' debian/changelog | \
           gh release create "$TAG" \
-          dist/*.zip \
+          dist/*.deb \
           --title "$TAG" \
           -F -
         env:
