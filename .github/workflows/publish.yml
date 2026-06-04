@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Install system packages
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get install -y debhelper lintian
+
       - name: Build deb
         run: make build
 
