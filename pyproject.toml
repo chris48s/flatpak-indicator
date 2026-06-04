@@ -1,6 +1,6 @@
 [project]
 name = "flatpak-indicator"
-version = "0.0.0"
+version = "0.1.0"
 description = "Apply Flatpak updates from the system tray"
 authors = [{name = "chris48s"}]
 license = "MIT"
