@@ -2,6 +2,8 @@
 
 A lightweight Linux system tray application that monitors Flatpak package updates and lets you apply them with one click.
 
+![screenshot](screenshot.png)
+
 ## Installation
 
 Install on Debian or Ubuntu using the deb package published at https://github.com/chris48s/flatpak-indicator/releases/latest
